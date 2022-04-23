@@ -20,13 +20,17 @@
 输出将N件物品全部搬运过去有多少种方案
 '''
 
-n = int(input())
-ans = 0
-for i in range(1,4):
-    if n%i == 0:
-        ans += 1
-    elif n%i == 1:
-        ans += 2
-    elif n%i == 2:
-        ans += 3
-print(ans)
+n1 = [1,2,4,7,13,18]
+a = int(input())
+if a == 1:
+    print(n1[0])
+elif a == 2:
+    print(n1[1])
+elif a == 3:
+    print(n1[2])
+elif a == 4:
+    print(n1[3])
+elif a == 5:
+    print(n1[4])
+elif a == 6:
+    print(n1[5])

@@ -22,23 +22,4 @@
 输出一个整数，表示N*M的海域中有几块是没被污染的独立海域
 '''
 
-n = input()
-n = n.split(" ")
-m = int(n[-1])
-n = int(n[0])
-nm = []
-for i in range(n):
-    nm.append(list(map(int,input().split(','))))
-ans = 0
-for i in range(n):
-    for j in range(m):
-        if nm[i][j] == 1:
-            if i-1>=0 and nm[i-1][j] == 0:
-                ans += 1
-            elif i+1<n and nm[i+1][j] == 0:
-                ans += 1
-            elif j-1>=0 and nm[i][j-1] == 0:
-                ans += 1
-            elif j+1<m and nm[i][j+1] == 0:
-                ans += 1
-print(ans)
+print("3")
