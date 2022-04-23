@@ -24,5 +24,9 @@ n = int(input())
 ans = 0
 for i in range(1,4):
     if n%i == 0:
-        ans += n//i
+        ans += 1
+    elif n%i == 1:
+        ans += 2
+    elif n%i == 2:
+        ans += 3
 print(ans)
