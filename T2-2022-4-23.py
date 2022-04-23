@@ -5,4 +5,6 @@
 '''
 
 int1 = int(input())
-print(max(int1))
+int1 = str(int1)
+int1 = max(int1)
+print(int1)
