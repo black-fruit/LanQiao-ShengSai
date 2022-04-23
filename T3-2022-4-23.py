@@ -14,13 +14,14 @@
 输出一个整数，表示小青最多可以摘到的苹果数
 '''
 
-a = int(input())
-a1 = []
-for i in range(4):
-    a1.append(int(input()))
-a1.sort()
-a2 = []
-for i in range(4):
-    if a1[i]>=a:
-        a2.append(a1[i])
-print(len(a2))
+n = int(input())
+n = n + 80
+height = input().split(',')
+height.sort()
+count = 0
+for i in range(len(height)):
+    if int(height[i]) <= n:
+        count += 1
+    else:
+        break
+print(count)
